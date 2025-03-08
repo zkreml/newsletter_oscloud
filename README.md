@@ -27,4 +27,4 @@ pro správu newsletterů pomocí [Listmonku](https://listmonk.app).
 
 📌 **Chceš přispět?** Klidně forkněte repo nebo vytvořte issue. 😊  
 
-📧 **Kontakt**: [novinky@oscloud.cz](mailto:novinky@oscloud.cz)
+📧 **Kontakt**: [podpora@oscloud.cz](mailto:novinky@oscloud.cz)
