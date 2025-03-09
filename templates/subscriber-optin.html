@@ -1,0 +1,24 @@
+{{ define "subscriber-optin" }}
+{{ template "header" . }}
+<h2>Potvrďte svůj odběr</h2>
+<p>Ahoj {{ .Subscriber.FirstName }},</p>
+<p>Děkujeme za váš zájem o odběr novinek OScloud!</p>
+<p>Byli jste přidáni do následujících seznamů:</p>
+<ul>
+    {{ range $i, $l := .Lists }}
+        <li>{{ .Name }}</li>
+    {{ end }}
+</ul>
+<p>Pro potvrzení vašeho odběru klikněte na následující tlačítko:</p>
+<p>
+    <a href="{{ .OptinURL }}" class="button" style="background-color: #007bff; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">
+        Potvrdit odběr
+    </a>
+</p>
+<p>Odběr novinek můžete kdykoliv zrušit. Váš e-mail byl automaticky zařazen do seznamu novinek OScloud CZ. Kliknutím na 'Zrušit odběr' svůj e-mail smažete.</p>
+<hr>
+<p><strong>Tým OScloud</strong></p>
+<a href="{{ .UnsubURL }}?manage=true">Zrušit odběr</a>
+{{ template "footer" }}
+{{ end }}
+
