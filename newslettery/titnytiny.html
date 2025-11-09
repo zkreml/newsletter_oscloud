@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>📦 Migrace Tiny Tiny RSS – důležité informace</title>
+</head>
+<body style="font-family: Arial, sans-serif; color:#333; background:#f4f4f4; padding:20px;">
+  <div style="max-width:600px; margin:auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.08);">
+    <h2 style="color:#007bff; margin-top:0;">📰 Změna v Tiny Tiny RSS – přechod z MySQL na PostgreSQL</h2>
+
+    <p>
+      Vývojáři <strong>Tiny Tiny RSS</strong> ukončili podporu verze s databází <strong>MySQL</strong>. 
+      Nové balíčky nyní používají <strong>PostgreSQL</strong>, kterou upstream doporučuje a udržuje.
+      Na Oscloudu Tiny Tiny RSS <strong>nerušíme</strong>, pouze přecházíme na novější a stabilnější databázi.
+    </p>
+
+    <h3>🔧 Co to pro vás znamená</h3>
+    <ul>
+      <li>Stará verze Tiny Tiny RSS bude <strong>v provozu do 5. prosince 2025</strong>.</li>
+      <li>V ten den bude současná instance <strong>odinstalována</strong> a <strong>na stejné doméně</strong> nasazena nová verze s PostgreSQL.</li>
+      <li>Před tímto datem prosím <strong>exportujte své odběry (OPML)</strong>:</li>
+    </ul>
+
+    <p style="margin-left:1em;">
+      <strong>Předvolby → Kanály → OPML → Exportovat</strong><br>
+      Uložte soubor do počítače (např. <code>feeds.opml</code>).
+    </p>
+
+    <h3>🧭 Po přechodu</h3>
+    <ol>
+      <li>Přihlásíte se běžně pomocí svého <strong>Oscloud účtu</strong>.</li>
+      <li>V nové instanci vyberete <strong>Předvolby → Kanály → OPML → Importovat</strong>.</li>
+      <li>Nahrajete dříve uložený OPML soubor a potvrdíte.</li>
+      <li>Po několika minutách se feedy znovu načtou (mohou se zobrazit jako nepřečtené).</li>
+    </ol>
+
+    <p>
+      📱 <strong>Uživatelé mobilních aplikací</strong> nemusí nic měnit – po importu OPML na webu 
+      by měla aplikace pokračovat v synchronizaci bez problémů. 
+      Doporučujeme po prvním spuštění jen ověřit, že se zdroje aktualizují správně.
+    </p>
+
+    <hr>
+
+    <p>
+      📢 Na přelomu listopadu a prosince pošleme ještě jedno krátké upozornění s připomenutím exportu.  
+      <strong>Moc se omlouváme za komplikace — bohužel jinak účty migrovat nejde.</strong>
+    </p>
+
+    <p style="font-size:0.9em; color:#666; margin-top:18px;">
+      Děkujeme, že používáte Oscloud. Jakmile začne samotná migrace, obdržíte další e-mail s přesnými kroky.
+    </p>
+
+    <p style="text-align:center; margin-top:28px;">
+      <strong>OScloud tým</strong><br>
+      <a href="https://oscloud.cz" style="color:#007bff; text-decoration:none;">https://oscloud.cz</a>
+    </p>
+  </div>
+</body>
+</html>
+
